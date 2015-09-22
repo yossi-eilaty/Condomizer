@@ -1,3 +1,15 @@
+/*
+
+ condomizer.js by Shmulik Shnoll & Yossi Eilaty
+ 
+ condomizer.js allows you to run a jQuery component within an anonymous iFrame (iFrame without a src URL). Running a componnent
+ from within anonymous iFrame acts as a condom: 
+ 1) It protects the component: when running in an iFrame the component is not affected by neither CSS rules defined in the main
+    window nor does it collide with any JS components / variables / functions running in the main window.
+ 2) It protects the main window: when the jQuery component is running in an iFrame any CSS rules it defined as well as any JS
+    entities it creates have no effect on the main window.
+    
+*/
 (function( $ ) {
     var count = 0;
     var defaults = {
