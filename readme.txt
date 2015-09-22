@@ -1,0 +1,1 @@
+Condomizer is a jQuery component that moves your HTML element from the DOM into a newly created anonymous iFrame and then activates a set of specified jQuery plugins on it.
